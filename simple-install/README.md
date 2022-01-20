@@ -16,7 +16,7 @@ This repo contains a bash script that will install and configure tools such as:
  - Proxychains
 
 It will also find the best canadian-based mirror and configure it to your system using python pip (should you want to not do this, select N when prompted).
-If you wish to configure the best mirror to your country, just change CA with your country (ex. US, UK) in [setup.sh](https://github.com/Soulsender/simple-tools/blob/main/setup.sh)
+If you wish to configure the best mirror to your country, just change CA with your country (ex. US, UK) in [setup.sh](https://github.com/Soulsender/simple-tools/blob/main/setup.sh).
 
 ### **Usage**
 To use this script, clone via [git](https://www.tutorialspoint.com/how-to-install-git-on-linux) 
