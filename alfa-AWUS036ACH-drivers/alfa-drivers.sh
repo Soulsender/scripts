@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "By Soulsender"
+echo "Commands courtesy of David Bombal"
+echo "https://www.youtube.com/watch?v=hEXwOkyYNL0&t=303s"
+
 # update repositories
 apt-get -y update
 apt-get -y upgrade 
