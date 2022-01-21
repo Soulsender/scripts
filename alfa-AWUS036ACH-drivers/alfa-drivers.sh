@@ -30,6 +30,6 @@ make
 make install
 
 # may need to unplug and replug the adapter
-echo "The script is finished. Use iwconfig to check. If it is still not listed, unplug and replug the adapter. 
+echo "The script is finished. Use iwconfig to check (probably listed as wlan0). If it is still not listed, unplug and replug the adapter. 
 If you are running this via virtual machine, you may also need to check your hypervisor (typically VMware or Virtualbox) 
 settings and see if the USB port is being registered."
