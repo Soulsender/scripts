@@ -15,8 +15,8 @@ cd alfa-AWUS036ACH-drivers/
 ```
 to execute:
 ```
-sudo chmod +x setup.sh
-./setup.sh
+sudo chmod +x alfa-drivers.sh 
+./alfa-drivers.sh
 ```
 and wait until the script says it's done!
 
