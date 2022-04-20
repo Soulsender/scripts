@@ -1,8 +1,5 @@
 # Alfa AWUS036ACH wifi adapter driver install script
 
- Instructions originally from [David Bombal](
- https://www.youtube.com/watch?v=hEXwOkyYNL0&t=303s)
-
  ### **Instructions**
  To use this script, clone via [git](https://www.tutorialspoint.com/how-to-install-git-on-linux).
 ```
