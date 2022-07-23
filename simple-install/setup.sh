@@ -3,16 +3,16 @@
 RED='\033[0;31m'
 GRN='\033[0;32m'
 BLU='\033[0;34m'
+RESET="\e[0m"
 
 mkdir ~/.software
 apt-get -y update
 apt-get -y upgrade
 
 # installs
-sudo apt-get install wireguard proxychains tor macchanger wireshark qbittorrent network-manager code flatpak chromium sublime-text kde-plasma-desktop vlc mpv obs flameshot cmatrix hollywood terminator virtualbox  -y
+sudo apt-get install wireguard proxychains tor macchanger wireshark qbittorrent network-manager flatpak chromium sublime-text kde-standard vlc mpv flameshot cmatrix hollywood terminator virtualbox  -y
 
-# flatpaks
-sudo flatpak install discord
 
+echo -e "${RED}Please install obs & discord with flatpak${RESET}"
+echo -e "$[RED}Please install vscode${RESET}"
 echo -e "${GRN}Script complete."
-echo -e "${BLU}Install LibreWolf"
