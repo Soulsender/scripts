@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # get PID of bot in variable and kill it
-BOT_PID=`pgrep python3`
 kill $BOT_PID
 
 # update bot
@@ -10,4 +9,4 @@ git pull
 
 # re-launch bot
 python3 /home/soul/Earth-Invader/main.py &
-
+export BOT_PID=`pgrep python3`
