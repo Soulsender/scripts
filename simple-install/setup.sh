@@ -11,7 +11,7 @@ apt-get -y upgrade
 
 # installs
 sudo apt-get install wireguard proxychains tor macchanger wireshark qbittorrent network-manager flatpak wpa_supplicant -y
-sudo apt-get chromium sublime-text kde-standard vlc flameshot cmatrix hollywood terminator virtualbox gobuster -y
+sudo apt-get install chromium sublime-text kde-standard vlc flameshot cmatrix hollywood terminator virtualbox gobuster -y
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
