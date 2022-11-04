@@ -1,19 +1,15 @@
 # Alfa AWUS036ACH wifi adapter driver install script
 
  ### **Instructions**
- To use this script, clone via [git](https://www.tutorialspoint.com/how-to-install-git-on-linux).
+ To use this script, clone via wget.
 ```
-git clone https://github.com/Soulsender/bash-scripts/tree/main/alfa-AWUS036ACH-drivers
+wget https://raw.githubusercontent.com/Soulsender/bash-scripts/main/alfa-AWUS036ACH-drivers/alfa-drivers.sh
 ```
-cd into the folder
+then run the script with sudo
 
 ```
-cd alfa-AWUS036ACH-drivers/
-```
-to execute:
-```
 sudo chmod +x alfa-drivers.sh 
-./alfa-drivers.sh
+sudo ./alfa-drivers.sh
 ```
 and wait until the script says it's done!
 
