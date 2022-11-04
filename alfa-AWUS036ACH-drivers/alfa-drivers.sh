@@ -38,4 +38,5 @@ echo ""
 echo -e "${green}The script is finished. Use ip a to check (the adapter is probably listed as wlan0). If it is still not listed, unplug and replug the adapter. 
 If you are running this via virtual machine, you may also need to check your hypervisor (typically VMware or Virtualbox) 
 settings and see if the USB port is being registered.${reset}"
+echo -e "${red}For further issues, please see https://docs.alfa.com.tw/Support/Linux/RTL8812AU/ ${reset}"
 sleep 3
