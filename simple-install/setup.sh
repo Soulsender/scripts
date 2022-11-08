@@ -19,5 +19,5 @@ cargo install rustscan
 cargo install feroxbuster
 
 echo -e "${RED}Please install obs & discord with flatpak${RESET}"
-echo -e "$[RED}Please install vscode${RESET}"
+echo -e "${RED}Please install vscode${RESET}"
 echo -e "${GRN}Script complete."
