@@ -14,3 +14,4 @@ kismet
 hostapd
 sqlmap
 wget
+git

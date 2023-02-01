@@ -21,6 +21,7 @@ def clone_configs():
     os.system("wget https://github.com/Soulsender/config/raw/master/neofetch-art.txt")
     os.system("mv -f neofetch-art.txt .config")
 
+# install github CLI
 def install_gh():
     os.system('type -p curl >/dev/null || sudo apt install curl -y')
     os.system('curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
@@ -28,6 +29,14 @@ def install_gh():
     && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
     && sudo apt update \
     && sudo apt install gh -y')
+
+# install autocpu-freq utility
+def install_autocpufreq():
+    os.system("git clone https://github.com/AdnanHodzic/auto-cpufreq.git")
+    os.chdir("auto-cpufreq")
+    os.system("sudo ./auto-cpufreq-installer")
+    os.chdir(home_dir)
+    os.system("sudo auto-cpufreq --install")
 
 # update the system packages
 os.system("sudo apt update -y")
@@ -40,8 +49,6 @@ with open(os_release) as file:
     else:
         print("OS Not recognized, defaulting to standard Debian Installer.")
 
-
-
 try:
     # interate through package list
     package_list = open("packages.txt", "r")
@@ -50,14 +57,13 @@ try:
 except:
     print("There was a problem updating the package manager.")
 
-
-
 # install oh-my-zsh
 try:
     os.system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"')
 except:
     print("There was a problem installing oh-my-zsh, continuing.")
 
+# install github cli
 try:
     install_gh()
     os.system("gh auth login")
@@ -67,6 +73,12 @@ try:
         print("Unable to clone configs, you probably aren't authenticated.")
 except:
     print("There was a problem installing github CLI.")
+
+# install autocpu-freq
+try:
+    install_autocpufreq()
+except:
+    print("There was a problem installing autocpu-freq")
 
 
 
