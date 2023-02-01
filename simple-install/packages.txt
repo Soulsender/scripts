@@ -1,0 +1,14 @@
+vlc
+flameshot
+nmap
+wireguard
+proxychains
+tor
+macchanger
+wireshark
+qbittorrent
+network-manager
+flatpak
+aircrack-ng
+kismet
+hostapd

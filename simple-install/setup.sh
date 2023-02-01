@@ -10,13 +10,13 @@ apt-get -y update
 apt-get -y upgrade
 
 # installs
-sudo apt-get install wireguard proxychains tor macchanger wireshark qbittorrent network-manager flatpak wpa_supplicant -y
-sudo apt-get install chromium sublime-text kde-standard vlc flameshot cmatrix hollywood terminator virtualbox gobuster -y
+sudo apt-get install wireguard proxychains tor macchanger wireshark qbittorrent network-manager flatpak network-manager -y
+sudo apt-get install chromium micro vlc flameshot cmatrix hollywood terminator virtualbox gobuster docker.io -y
+sudo docker pull rustscan/rustscan:2.0.0
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source "$HOME/.cargo/env"
-cargo install rustscan
-cargo install feroxbuster
+if [`cat /etc/os-release | grep PRETTY_NAME` == 'PRETTY_NAME="Kali GNU/Linux Rolling"'] then
+    echo "yes"
+fi
 
 echo -e "${RED}Please install obs & discord with flatpak${RESET}"
 echo -e "${RED}Please install vscode${RESET}"
