@@ -12,3 +12,5 @@ flatpak
 aircrack-ng
 kismet
 hostapd
+sqlmap
+wget
