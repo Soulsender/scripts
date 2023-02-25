@@ -18,9 +18,9 @@ sleep 3
 
 # get dependancies
 sudo apt update
-which dkms || sudo apt install dkms
-which rfkill || sudo apt install rfkill
-which git || sudo apt install git
+which dkms || sudo apt install -y dkms
+which rfkill || sudo apt install -y rfkill
+which git || sudo apt install -y git
 
 # clone drivers
 cd ~
@@ -32,6 +32,10 @@ sudo ./install-driver.sh
 
 # check if drivers are ready
 find /lib/modules/`uname -r`/ -name "8812au.ko"
+
+# delete cloned drivers
+cd ..
+rm -rf 8812au-20210629
 
 # may need to unplug and replug the adapter
 echo ""
